@@ -1,0 +1,1 @@
+n = [0];k = [1];nl = 0;kl = 1;for i = 0:10000        nl += 0.0001;        n = [n,nl];        kl = 1+ (exp(-2*kl / nl)-1)/(2*kl/nl);        k  = [k,kl]; endfor plot(n,k); set(gca, 'FontName', 'Arial')set(gca, 'FontSize', 40)ylabel('Miss Rate (m)')xlabel('''Array Size/Cache Size (w)');

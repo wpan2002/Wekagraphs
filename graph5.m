@@ -1,0 +1,1 @@
+x = 0:0.1:1;y = 0.5*(1+sqrt(1-2*x));plot(x,y); set(gca, 'FontName', 'Arial')set(gca, 'FontSize', 40)ylabel('Miss Rate (m)')xlabel('''Array Size/Cache Size (w)');
